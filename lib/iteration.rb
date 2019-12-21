@@ -11,8 +11,10 @@ def join_ingredients(src)
     x = 0 
     
     while x < src.length do 
-      new_array.push("I love #{src[x][0]} and ")
-  
+      new_array.push("I love #{src[x][0]} and #{src[x][1]} on my pizza")
+      x += 1 
+    end 
+    new_array
 
 end
 
