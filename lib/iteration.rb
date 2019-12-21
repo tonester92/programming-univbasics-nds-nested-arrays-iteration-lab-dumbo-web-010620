@@ -23,13 +23,14 @@ def find_greater_pair(src)
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
   
-  outer_results = []
-  row_index = 0 
-  while row_index < src.count do 
-    element_index = 0 
-    inner_results = []
-    while element_index < src[row_index].count do 
+  new_array = []
+  x = 0 
   
+  while x < src.length do 
+    new_array.push(src[x].max)
+    x += 1 
+  end 
+  new_array
   
 end
 
